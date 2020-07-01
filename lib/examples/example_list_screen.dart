@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutterexamples/data/Example.dart';
 import 'package:learningflutterexamples/general/AppStrings.dart';
-import 'all_examples.dart';
+import '../data/all_examples.dart';
 
-//Examples List Screen
+//Examples List Screen with all the examples
 class ExamplesListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
