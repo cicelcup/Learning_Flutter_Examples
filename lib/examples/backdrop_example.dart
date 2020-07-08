@@ -50,7 +50,7 @@ class _BackDropExampleState extends State<BackDropExample> {
   Widget build(BuildContext context) {
     return BackdropScaffold(
       appBar: BackdropAppBar(
-        title: Text(AppStrings.exampleTwoTitle),
+        title: Text(AppStrings.exampleTitle2),
       ),
       frontLayer: _frontLayers[_currentIndex],
       headerHeight: 50.0,

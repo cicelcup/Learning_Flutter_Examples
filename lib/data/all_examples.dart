@@ -1,4 +1,5 @@
 import 'package:learningflutterexamples/data/Example.dart';
+import 'package:learningflutterexamples/examples/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
 import 'package:learningflutterexamples/examples/backdrop_example.dart';
 import 'package:learningflutterexamples/general/AppStrings.dart';
@@ -14,8 +15,8 @@ class AllExamples {
     _list.add(
       //add the example to the list
       Example(
-        title: AppStrings.exampleOneTitle,
-        subtitle: AppStrings.exampleOneSubTitle,
+        title: AppStrings.exampleTitle1,
+        subtitle: AppStrings.exampleSubTitle1,
         widgetExample: StatefulExample(),
       ),
     );
@@ -23,9 +24,18 @@ class AllExamples {
     //add the example to the list
     _list.add(
       Example(
-        title: AppStrings.exampleTwoTitle,
-        subtitle: AppStrings.exampleTwoSubTitle,
+        title: AppStrings.exampleTitle2,
+        subtitle: AppStrings.exampleSubTitle2,
         widgetExample: BackDropExample(),
+      ),
+    );
+
+    //add the example to the list
+    _list.add(
+      Example(
+        title: AppStrings.exampleTitle3,
+        subtitle: AppStrings.exampleSubTitle3,
+        widgetExample: SplashScreenExample(),
       ),
     );
 

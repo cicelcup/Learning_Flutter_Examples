@@ -13,7 +13,7 @@ class _StatefulExampleState extends State<StatefulExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppStrings.exampleOneTitle),
+        title: Text(AppStrings.exampleTitle1),
       ),
       body: Container(
           child: Center(

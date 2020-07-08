@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutterexamples/general/AppStrings.dart';
-import 'examples/example_list_screen.dart';
+import 'example_list_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: AppStrings.appTitle,
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.indigo,
       ),
       home: ExamplesListScreen(),
     );
