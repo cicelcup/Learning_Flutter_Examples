@@ -11,7 +11,9 @@ class AppStrings {
   static const String exampleSubTitle3 =
       "Show a splash screen to show while a process is loading";
   static const String exampleTitle4 = "AutoComplete";
-  static const String exampleSubTitle4 = "Show one auto complete search field";
+  static const String exampleSubTitle4 = "Show auto complete search field";
+  static const String exampleTitle5 = "Drop Down Search";
+  static const String exampleSubTitle5 = "Show drop down search field";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";

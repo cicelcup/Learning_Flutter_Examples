@@ -7,7 +7,6 @@ class AutoCompleteExample extends StatefulWidget {
 }
 
 class _AutoCompleteExampleState extends State<AutoCompleteExample> {
-  List<String> added = [];
   List<String> suggestions = [
     "Apple",
     "Armidillo",

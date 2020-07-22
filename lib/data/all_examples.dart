@@ -1,5 +1,6 @@
 import 'package:learningflutterexamples/data/Example.dart';
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
+import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
 import 'package:learningflutterexamples/examples/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
 import 'package:learningflutterexamples/examples/backdrop_example.dart';
@@ -46,6 +47,15 @@ class AllExamples {
         title: AppStrings.exampleTitle4,
         subtitle: AppStrings.exampleSubTitle4,
         widgetExample: AutoCompleteExample(),
+      ),
+    );
+
+    //add the example to the list
+    _list.add(
+      Example(
+        title: AppStrings.exampleTitle5,
+        subtitle: AppStrings.exampleSubTitle5,
+        widgetExample: DropDownSearchExample(),
       ),
     );
 
