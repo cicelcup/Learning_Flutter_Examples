@@ -11,6 +11,7 @@ environment:
 dependencies:
   backdrop: ^0.4.1
   flare_splash_screen: ^3.0.1
+  autocomplete_textfield: ^1.7.3
   flutter:
     sdk: flutter
 

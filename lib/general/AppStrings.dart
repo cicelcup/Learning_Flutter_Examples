@@ -10,6 +10,8 @@ class AppStrings {
   static const String exampleTitle3 = "Splash Screen with Flare";
   static const String exampleSubTitle3 =
       "Show a splash screen to show while a process is loading";
+  static const String exampleTitle4 = "AutoComplete";
+  static const String exampleSubTitle4 = "Show one auto complete search field";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";
