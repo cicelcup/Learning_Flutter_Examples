@@ -10,6 +10,7 @@ class AppStrings {
   static const String exampleTitle6 = "Platform check";
   static const String exampleTitle7 = "Share Data";
   static const String exampleTitle8 = "Simple Provider";
+  static const String exampleTitle9 = "Future and Stream";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";
