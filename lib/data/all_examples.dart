@@ -1,4 +1,5 @@
 import 'package:learningflutterexamples/data/Example.dart';
+import 'package:learningflutterexamples/examples/action_icon_example.dart';
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
 import 'package:learningflutterexamples/examples/check_platform_example.dart';
 import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
@@ -54,6 +55,9 @@ class AllExamples {
 
     _list.add(Example(
         title: AppStrings.exampleTitle11, widgetExample: Sembast2Example()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle12, widgetExample: ActionIconExample()));
 
     return _list;
   }

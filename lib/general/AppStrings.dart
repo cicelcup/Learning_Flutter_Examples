@@ -13,6 +13,7 @@ class AppStrings {
   static const String exampleTitle9 = "Future and Stream";
   static const String exampleTitle10 = "Sembast";
   static const String exampleTitle11 = "Sembast Second Example";
+  static const String exampleTitle12 = "Action Icon";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";
