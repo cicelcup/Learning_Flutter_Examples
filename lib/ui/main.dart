@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: AppStrings.appTitle,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.blue,
+        buttonTheme: ButtonThemeData(buttonColor: Colors.lightBlue),
       ),
       home: ExamplesListScreen(),
     );

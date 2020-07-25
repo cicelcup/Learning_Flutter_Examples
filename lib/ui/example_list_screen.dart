@@ -10,7 +10,7 @@ class ExamplesListScreen extends StatelessWidget {
     //Get all the examples
     final _examplesList = AllExamples.getAllExamples();
     return Scaffold(
-      backgroundColor: Colors.indigoAccent.shade100,
+      backgroundColor: Colors.blueAccent,
       appBar: AppBar(
         title: Text(AppStrings.appBarTitle),
       ),
