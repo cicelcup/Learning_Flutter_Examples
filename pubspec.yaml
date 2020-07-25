@@ -10,6 +10,8 @@ environment:
 
 dependencies:
   backdrop: ^0.4.1
+  share: ^0.6.4+3
+  url_launcher: ^5.4.10
   flare_splash_screen: ^3.0.1
   autocomplete_textfield: ^1.7.3
   dropdown_search: ^0.4.4

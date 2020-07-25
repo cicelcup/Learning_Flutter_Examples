@@ -1,6 +1,8 @@
 import 'package:learningflutterexamples/data/Example.dart';
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
+import 'package:learningflutterexamples/examples/check_platform_example.dart';
 import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
+import 'package:learningflutterexamples/examples/share_example.dart';
 import 'package:learningflutterexamples/examples/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
 import 'package:learningflutterexamples/examples/backdrop_example.dart';
@@ -14,50 +16,28 @@ class AllExamples {
   static List<Example> getAllExamples() {
     //Clear the list to avoid generate again when reStart the app
     _list.clear();
-    _list.add(
-      //add the example to the list
-      Example(
-        title: AppStrings.exampleTitle1,
-        subtitle: AppStrings.exampleSubTitle1,
-        widgetExample: StatefulExample(),
-      ),
-    );
+    _list.add(Example(
+        title: AppStrings.exampleTitle1, widgetExample: StatefulExample()));
 
-    //add the example to the list
-    _list.add(
-      Example(
-        title: AppStrings.exampleTitle2,
-        subtitle: AppStrings.exampleSubTitle2,
-        widgetExample: BackDropExample(),
-      ),
-    );
+    _list.add(Example(
+        title: AppStrings.exampleTitle2, widgetExample: BackDropExample()));
 
-    //add the example to the list
-    _list.add(
-      Example(
-        title: AppStrings.exampleTitle3,
-        subtitle: AppStrings.exampleSubTitle3,
-        widgetExample: SplashScreenExample(),
-      ),
-    );
+    _list.add(Example(
+        title: AppStrings.exampleTitle3, widgetExample: SplashScreenExample()));
 
-    //add the example to the list
-    _list.add(
-      Example(
-        title: AppStrings.exampleTitle4,
-        subtitle: AppStrings.exampleSubTitle4,
-        widgetExample: AutoCompleteExample(),
-      ),
-    );
+    _list.add(Example(
+        title: AppStrings.exampleTitle4, widgetExample: AutoCompleteExample()));
 
-    //add the example to the list
-    _list.add(
-      Example(
+    _list.add(Example(
         title: AppStrings.exampleTitle5,
-        subtitle: AppStrings.exampleSubTitle5,
-        widgetExample: DropDownSearchExample(),
-      ),
-    );
+        widgetExample: DropDownSearchExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle6,
+        widgetExample: CheckPlatformExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle7, widgetExample: ShareExample()));
 
     return _list;
   }

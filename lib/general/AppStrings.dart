@@ -2,18 +2,13 @@
 class AppStrings {
   static const String appTitle = "Flutter Examples List";
   static const String appBarTitle = "Examples List";
-  static const String exampleTitle1 = "Stateful Widget Example";
-  static const String exampleSubTitle1 =
-      "Show the way how one mutable widget works";
-  static const String exampleTitle2 = "BackDrop Example";
-  static const String exampleSubTitle2 = "Show how Backdrop works";
+  static const String exampleTitle1 = "Stateful Widget";
+  static const String exampleTitle2 = "BackDrop";
   static const String exampleTitle3 = "Splash Screen with Flare";
-  static const String exampleSubTitle3 =
-      "Show a splash screen to show while a process is loading";
   static const String exampleTitle4 = "AutoComplete";
-  static const String exampleSubTitle4 = "Show auto complete search field";
   static const String exampleTitle5 = "Drop Down Search";
-  static const String exampleSubTitle5 = "Show drop down search field";
+  static const String exampleTitle6 = "Platform check";
+  static const String exampleTitle7 = "Share Data";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";

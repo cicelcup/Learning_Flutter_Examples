@@ -10,6 +10,7 @@ class ExamplesListScreen extends StatelessWidget {
     //Get all the examples
     final _examplesList = AllExamples.getAllExamples();
     return Scaffold(
+      backgroundColor: Colors.indigoAccent.shade100,
       appBar: AppBar(
         title: Text(AppStrings.appBarTitle),
       ),
@@ -32,9 +33,9 @@ class ExampleItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      margin: EdgeInsets.all(8.0),
       child: ListTile(
         title: Text(example.title),
-        subtitle: Text(example.subtitle),
         onTap: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => example.widgetExample));
