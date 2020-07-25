@@ -9,6 +9,7 @@ class AppStrings {
   static const String exampleTitle5 = "Drop Down Search";
   static const String exampleTitle6 = "Platform check";
   static const String exampleTitle7 = "Share Data";
+  static const String exampleTitle8 = "Simple Provider";
 
   /*Backdrop Example*/
   static const String frontLayerLabel = "Front Layer";
