@@ -4,6 +4,7 @@ import 'package:learningflutterexamples/examples/check_platform_example.dart';
 import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
 import 'package:learningflutterexamples/examples/future_stream_example.dart';
 import 'package:learningflutterexamples/examples/provider_example.dart';
+import 'package:learningflutterexamples/examples/sembast_example.dart';
 import 'package:learningflutterexamples/examples/share_example.dart';
 import 'package:learningflutterexamples/examples/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
@@ -46,6 +47,9 @@ class AllExamples {
 
     _list.add(Example(
         title: AppStrings.exampleTitle9, widgetExample: FutureStreamExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle10, widgetExample: SembastExample()));
 
     return _list;
   }

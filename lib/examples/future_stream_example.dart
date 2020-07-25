@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 
 class FutureStreamExample extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _FutureStreamExampleState createState() => _FutureStreamExampleState();
 }
 
-class _HomePageState extends State<FutureStreamExample> {
+class _FutureStreamExampleState extends State<FutureStreamExample> {
   int _count = 0; // used by StreamBuilder
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Future and Stream Example")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
