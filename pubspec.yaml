@@ -19,6 +19,8 @@ dependencies:
   autocomplete_textfield: ^1.7.3
   dropdown_search: ^0.4.4
   provider: ^4.1.0
+  audio_service: ^0.11.2
+  just_audio: ^0.2.2
   flutter:
     sdk: flutter
 

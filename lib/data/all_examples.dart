@@ -1,14 +1,15 @@
 import 'package:learningflutterexamples/data/Example.dart';
 import 'package:learningflutterexamples/examples/action_icon_example.dart';
+import 'package:learningflutterexamples/examples/audio/audio_service_example.dart';
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
 import 'package:learningflutterexamples/examples/check_platform_example.dart';
 import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
 import 'package:learningflutterexamples/examples/future_stream_example.dart';
-import 'package:learningflutterexamples/examples/provider_example.dart';
+import 'package:learningflutterexamples/examples/providers/provider_example.dart';
 import 'package:learningflutterexamples/examples/sembast_2_example.dart';
-import 'package:learningflutterexamples/examples/sembast_example.dart';
+import 'package:learningflutterexamples/examples/sembast/sembast_example.dart';
 import 'package:learningflutterexamples/examples/share_example.dart';
-import 'package:learningflutterexamples/examples/splash_screen_example.dart';
+import 'package:learningflutterexamples/examples/splash/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
 import 'package:learningflutterexamples/examples/backdrop_example.dart';
 import 'package:learningflutterexamples/general/AppStrings.dart';
@@ -58,6 +59,10 @@ class AllExamples {
 
     _list.add(Example(
         title: AppStrings.exampleTitle12, widgetExample: ActionIconExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle13,
+        widgetExample: AudioServiceExample()));
 
     return _list;
   }

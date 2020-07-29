@@ -1,32 +1,10 @@
 import 'package:english_words/english_words.dart' as english_words;
 import 'package:flutter/material.dart';
+import 'package:learningflutterexamples/examples/sembast/todo_item.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 import 'package:sembast/sembast.dart';
 import 'package:sembast/sembast_io.dart';
-
-// Data class for the mini application.
-class TodoItem {
-  final int id;
-  final String content;
-  bool isDone;
-  final DateTime createdAt;
-
-  TodoItem({this.id, this.content, this.isDone = false, this.createdAt});
-
-  TodoItem.fromJsonMap(Map<String, dynamic> map)
-      : id = map['id'],
-        content = map['content'],
-        isDone = map['isDone'],
-        createdAt = DateTime.fromMillisecondsSinceEpoch(map['createdAt']);
-
-  Map<String, dynamic> toJsonMap() => {
-        'id': id,
-        'content': content,
-        'isDone': isDone,
-        'createdAt': createdAt.millisecondsSinceEpoch,
-      };
-}
 
 class SembastExample extends StatefulWidget {
   const SembastExample({Key key}) : super(key: key);

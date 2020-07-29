@@ -1,26 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learningflutterexamples/examples/providers/counter.dart';
 import 'package:provider/provider.dart';
-
-//Class of the provider
-class Counter with ChangeNotifier {
-  int value = 0;
-
-  void increment() {
-    value += 1;
-    notifyListeners();
-  }
-}
-
-class ProviderExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    //definition of the provider
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => Counter(),
-      child: ProviderScreen(),
-    );
-  }
-}
 
 class ProviderScreen extends StatelessWidget {
   @override

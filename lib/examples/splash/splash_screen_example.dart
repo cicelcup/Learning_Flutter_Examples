@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
+import 'package:learningflutterexamples/examples/splash/splash_home_page.dart';
 
 class SplashScreenExample extends StatelessWidget {
   @override
@@ -12,18 +13,6 @@ class SplashScreenExample extends StatelessWidget {
         until: () => Future.delayed(Duration(milliseconds: 300)),
         startAnimation: '1',
       ),
-    );
-  }
-}
-
-class SplashHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Splash Home Page"),
-      ),
-      body: Center(child: Text("This is a example")),
     );
   }
 }
