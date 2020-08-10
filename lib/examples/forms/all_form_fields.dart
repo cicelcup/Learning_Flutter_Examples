@@ -1,0 +1,52 @@
+import 'package:flutter/cupertino.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_1.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_10.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_11.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_12.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_13.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_14.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_15.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_16.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_17.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_18.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_19.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_2.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_20.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_21.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_22.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_23.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_24.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_3.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_4.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_5.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_6.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_7.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_8.dart';
+import 'package:learningflutterexamples/examples/forms/fields/field_9.dart';
+
+List<Widget> getFormFields() => [
+      Field1(), //FormBuilderCheckbox
+      Field2(), //FormBuilderCheckboxGroup
+      //Field3(), //FormBuilderChipsInput
+      Field4(), //FormBuilderChoiceChip
+      Field5(), //FormBuilderColorPicker
+      Field6(), //FormBuilderCountryPicker
+      Field7(), //FormBuilderDateRangePicker
+      Field8(), //FormBuilderDateTimePicker
+      Field9(), //FormBuilderDropdown
+      Field10(), //FormBuilderFilterChip
+      Field11(), //FormBuilderImagePicker
+      Field12(), //FormBuilderPhoneField
+      Field13(), //FormBuilderRadioGroup
+      Field14(), //FormBuilderRangeSlider
+      Field15(), //FormBuilderRate
+      Field16(), //FormBuilderSegmentedControl
+      Field17(), //FormBuilderSignaturePad
+      Field18(), //FormBuilderSlider
+      Field19(), //FormBuilderSwitch
+      Field20(), //FormBuilderTextField
+      Field21(), //FormBuilderTouchSpin
+      Field22(), //FormBuilderTypeAhead
+      Field23(), //FormBuilderCustomField
+      Field24(), //FormBuilderFilePicker
+    ];

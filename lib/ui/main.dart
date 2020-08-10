@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: AppStrings.appTitle,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        buttonTheme: ButtonThemeData(buttonColor: Colors.lightBlue),
+        buttonTheme: ButtonThemeData(buttonColor: Colors.blue),
       ),
       home: ExamplesListScreen(),
     );

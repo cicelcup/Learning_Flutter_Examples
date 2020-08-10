@@ -4,6 +4,7 @@ import 'package:learningflutterexamples/examples/audio/audio_service_example.dar
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
 import 'package:learningflutterexamples/examples/check_platform_example.dart';
 import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
+import 'package:learningflutterexamples/examples/forms/form_screen_example.dart';
 import 'package:learningflutterexamples/examples/future_stream_example.dart';
 import 'package:learningflutterexamples/examples/providers/provider_example.dart';
 import 'package:learningflutterexamples/examples/sembast_2_example.dart';
@@ -63,6 +64,9 @@ class AllExamples {
     _list.add(Example(
         title: AppStrings.exampleTitle13,
         widgetExample: AudioServiceExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle14, widgetExample: FormScreenExample()));
 
     return _list;
   }
