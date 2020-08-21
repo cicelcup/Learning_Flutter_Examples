@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learningflutterexamples/general/AppStrings.dart';
+import 'package:learningflutterexamples/general/app_strings.dart';
 
 class StatefulExample extends StatefulWidget {
   @override

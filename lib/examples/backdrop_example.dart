@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:backdrop/backdrop.dart';
-import 'package:learningflutterexamples/general/AppStrings.dart';
+import 'package:learningflutterexamples/general/app_strings.dart';
 
 //Use of backdrop package
 class BackDropExample extends StatefulWidget {

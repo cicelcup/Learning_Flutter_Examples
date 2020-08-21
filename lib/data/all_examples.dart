@@ -14,7 +14,7 @@ import 'package:learningflutterexamples/examples/share_example.dart';
 import 'package:learningflutterexamples/examples/splash/splash_screen_example.dart';
 import 'package:learningflutterexamples/examples/stateful_example.dart';
 import 'package:learningflutterexamples/examples/backdrop_example.dart';
-import 'package:learningflutterexamples/general/AppStrings.dart';
+import 'package:learningflutterexamples/general/app_strings.dart';
 
 //class to create the example list
 class AllExamples {

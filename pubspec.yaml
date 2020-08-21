@@ -9,20 +9,38 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  #BackDrop
   backdrop: ^0.4.1
+  #NoSQL DB
   sembast: ^2.4.4+3
+  #List of english words
   english_words: ^3.1.5
+  #file system management
   path_provider: ^1.5.1
+  #Share management
   share: ^0.6.4+3
+  #url launcher
   url_launcher: ^5.4.10
+  #flare
   flare_splash_screen: ^3.0.1
+  #autocomplete
   autocomplete_textfield: ^1.7.3
+  #search
   dropdown_search: ^0.4.4
+  #provider
   provider: ^4.1.0
+  #audio in a service
   audio_service: ^0.11.2
+  #play audio
   just_audio: ^0.2.2
+  #form with different components and validators
   flutter_form_builder: ^3.13.1
+  #choose files from the phone
   form_builder_file_picker: ^0.3.0
+  #Fonts
+  google_fonts: ^1.1.0
+  # Custom snack bar
+  flushbar: ^1.10.4
   flutter:
     sdk: flutter
 
