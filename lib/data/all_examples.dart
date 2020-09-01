@@ -8,6 +8,7 @@ import 'package:learningflutterexamples/examples/expansion_panel_example.dart';
 import 'package:learningflutterexamples/examples/forms/form_screen_example.dart';
 import 'package:learningflutterexamples/examples/future_stream_example.dart';
 import 'package:learningflutterexamples/examples/providers/provider_example.dart';
+import 'package:learningflutterexamples/examples/route_transition_example.dart';
 import 'package:learningflutterexamples/examples/sembast_2_example.dart';
 import 'package:learningflutterexamples/examples/sembast/sembast_example.dart';
 import 'package:learningflutterexamples/examples/share_example.dart';
@@ -72,6 +73,10 @@ class AllExamples {
     _list.add(Example(
         title: AppStrings.exampleTitle15,
         widgetExample: ExpansionPanelExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle16,
+        widgetExample: RouteTransitionExample()));
 
     return _list;
   }
