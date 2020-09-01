@@ -7,6 +7,7 @@ import 'package:learningflutterexamples/examples/dropdown_search_example.dart';
 import 'package:learningflutterexamples/examples/expansion_panel_example.dart';
 import 'package:learningflutterexamples/examples/forms/form_screen_example.dart';
 import 'package:learningflutterexamples/examples/future_stream_example.dart';
+import 'package:learningflutterexamples/examples/physics_animation/physics_simulation_example.dart';
 import 'package:learningflutterexamples/examples/providers/provider_example.dart';
 import 'package:learningflutterexamples/examples/route_transition_example.dart';
 import 'package:learningflutterexamples/examples/sembast_2_example.dart';
@@ -77,6 +78,10 @@ class AllExamples {
     _list.add(Example(
         title: AppStrings.exampleTitle16,
         widgetExample: RouteTransitionExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle17,
+        widgetExample: PhysicsSimulationExample()));
 
     return _list;
   }

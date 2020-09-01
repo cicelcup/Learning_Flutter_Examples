@@ -18,6 +18,7 @@ class AppStrings {
   static const String exampleTitle14 = 'Forms';
   static const String exampleTitle15 = 'Expansion Tile';
   static const String exampleTitle16 = 'Page Route Transition';
+  static const String exampleTitle17 = 'Physics Simulation';
 
   /*Backdrop Example*/
   static const String frontLayerLabel = 'Front Layer';
