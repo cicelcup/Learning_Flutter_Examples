@@ -4,18 +4,19 @@ import 'package:learningflutterexamples/examples/forms/form_screen_example.dart'
 
 class Field3 extends StatelessWidget {
   final contacts = [
-    "Jorge Augusto",
-    "JAPM",
-    "Jorge Peroza",
-    "Jorge A Peroza M"
+    'Jorge Augusto',
+    'JAPM',
+    'Jorge Peroza',
+    'Jorge A Peroza M'
   ];
 
+  @override
   Widget build(BuildContext context) {
     return FormBuilderChipsInput(
       attribute: 'chips_test',
       decoration: const InputDecoration(labelText: 'Chips'),
       onChanged: onChanged,
-      initialValue: ["JAPM"],
+      initialValue: ['JAPM'],
       maxChips: 5,
       keyboardAppearance: Brightness.dark,
       findSuggestions: (String query) {

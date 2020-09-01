@@ -5,13 +5,13 @@ class Field18 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FormBuilderSlider(
-      attribute: "slider",
+      attribute: 'slider',
       validators: [FormBuilderValidators.min(6)],
       min: 0.0,
       max: 10.0,
       initialValue: 1.0,
       divisions: 10,
-      decoration: InputDecoration(labelText: "Number of things"),
+      decoration: InputDecoration(labelText: 'Number of things'),
     );
   }
 }

@@ -9,17 +9,17 @@ class FormButtons extends StatelessWidget {
     return ButtonBar(
       children: <Widget>[
         RaisedButton(
-          child: Text("Submit"),
+          child: Text('Submit'),
           onPressed: () {
             if (_fbKey.currentState.saveAndValidate()) {
               _fbKey.currentState.value.forEach((key, value) {
-                print("key: $key / value: $value");
+                print('key: $key / value: $value');
               });
             }
           },
         ),
         RaisedButton(
-          child: Text("Reset"),
+          child: Text('Reset'),
           onPressed: () {
             _fbKey.currentState.reset();
           },

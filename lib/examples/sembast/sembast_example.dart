@@ -28,25 +28,25 @@ class _SembastExampleState extends State<SembastExample> {
   @override
   void initState() {
     super.initState();
-    this._initDbFuture = _initDb();
+    _initDbFuture = _initDb();
   }
 
   // Opens a db local file. Creates the db table if it's not yet created.
   Future<bool> _initDb() async {
     final dbFolder = await path_provider.getApplicationDocumentsDirectory();
     final dbPath = join(dbFolder.path, kDbFileName);
-    this._db = await databaseFactoryIo.openDatabase(dbPath);
+    _db = await databaseFactoryIo.openDatabase(dbPath);
     print('Db created at $dbPath');
-    this._store = intMapStoreFactory.store(kDbStoreName);
-    _getTodoItems();
+    _store = intMapStoreFactory.store(kDbStoreName);
+    await _getTodoItems();
     return true;
   }
 
   // Retrieves records from the db store.
   Future<void> _getTodoItems() async {
     final finder = Finder();
-    final recordSnapshots = await this._store.find(this._db, finder: finder);
-    this._todos = recordSnapshots
+    final recordSnapshots = await _store.find(_db, finder: finder);
+    _todos = recordSnapshots
         .map((snapshot) => TodoItem.fromJsonMap({
               ...snapshot.value,
               'id': snapshot.key,
@@ -58,45 +58,44 @@ class _SembastExampleState extends State<SembastExample> {
   // Note we don't need to explicitly set the primary key (id), it'll auto
   // increment.
   Future<void> _addTodoItem(TodoItem todo) async {
-    int id = await this._store.add(this._db, todo.toJsonMap());
+    var id = await _store.add(_db, todo.toJsonMap());
     print('Inserted todo item with id=$id.');
   }
 
   // Updates records in the db table.
   Future<void> _toggleTodoItem(TodoItem todo) async {
     todo.isDone = !todo.isDone;
-    int count = await this._store.update(
-          this._db,
-          todo.toJsonMap(),
-          finder: Finder(filter: Filter.byKey(todo.id)),
-        );
+    var count = await _store.update(
+      _db,
+      todo.toJsonMap(),
+      finder: Finder(filter: Filter.byKey(todo.id)),
+    );
     print('Updated $count records in db.');
   }
 
   // Deletes records in the db table.
   Future<void> _deleteTodoItem(TodoItem todo) async {
-    int count = await this._store.delete(
-          this._db,
-          finder: Finder(filter: Filter.byKey(todo.id)),
-        );
+    var count = await _store.delete(
+      _db,
+      finder: Finder(filter: Filter.byKey(todo.id)),
+    );
     print('Updated $count records in db.');
   }
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<bool>(
-      future: this._initDbFuture,
+      future: _initDbFuture,
       builder: (context, snapshot) {
-        if (!snapshot.hasData)
-          return Center(
-            child: CircularProgressIndicator(),
-          );
+        if (!snapshot.hasData) {
+          return Center(child: CircularProgressIndicator());
+        }
         return Scaffold(
           appBar: AppBar(
-            title: Text("Sembast Example"),
+            title: Text('Sembast Example'),
           ),
           body: ListView(
-            children: this._todos.map(_itemToListTile).toList(),
+            children: _todos.map(_itemToListTile).toList(),
           ),
           floatingActionButton: _buildFloatingActionButton(),
         );
@@ -126,14 +125,14 @@ class _SembastExampleState extends State<SembastExample> {
             Icon(todo.isDone ? Icons.check_box : Icons.check_box_outline_blank),
         onPressed: () async {
           await _toggleTodoItem(todo);
-          _updateUI();
+          await _updateUI();
         },
       ),
       trailing: IconButton(
           icon: Icon(Icons.delete),
           onPressed: () async {
             await _deleteTodoItem(todo);
-            _updateUI();
+            await _updateUI();
           }),
     );
   }
@@ -149,7 +148,7 @@ class _SembastExampleState extends State<SembastExample> {
             createdAt: DateTime.now(),
           ),
         );
-        _updateUI();
+        await _updateUI();
       },
     );
   }

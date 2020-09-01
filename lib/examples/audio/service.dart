@@ -19,8 +19,6 @@ final stopControl = MediaControl(
 );
 
 //Entry Point for the service running and audio player task
-backgroundTaskEntryPoint() {
-  AudioServiceBackground.run(() {
-    return AudioPlayerTask();
-  });
+void backgroundTaskEntryPoint() {
+  AudioServiceBackground.run(() => AudioPlayerTask());
 }

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:learningflutterexamples/examples/forms/fields/field_1.dart';
 import 'package:learningflutterexamples/examples/forms/fields/field_10.dart';
 import 'package:learningflutterexamples/examples/forms/fields/field_11.dart';
@@ -27,7 +27,7 @@ import 'package:learningflutterexamples/examples/forms/fields/field_9.dart';
 List<Widget> getFormFields() => [
       Field1(), //FormBuilderCheckbox
       Field2(), //FormBuilderCheckboxGroup
-      //Field3(), //FormBuilderChipsInput
+      Field3(), //FormBuilderChipsInput
       Field4(), //FormBuilderChoiceChip
       Field5(), //FormBuilderColorPicker
       Field6(), //FormBuilderCountryPicker

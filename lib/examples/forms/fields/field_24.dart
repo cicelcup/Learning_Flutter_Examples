@@ -5,8 +5,8 @@ class Field24 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FormBuilderFilePicker(
-      attribute: "file",
-      decoration: InputDecoration(labelText: "Attachments"),
+      attribute: 'file',
+      decoration: InputDecoration(labelText: 'Attachments'),
       maxFiles: 5,
       multiple: true,
       previewImages: false,

@@ -47,6 +47,8 @@ dependencies:
   cupertino_icons: ^0.1.3
 
 dev_dependencies:
+  #Pedantic
+  pedantic: ^1.9.2
   flutter_test:
     sdk: flutter
 

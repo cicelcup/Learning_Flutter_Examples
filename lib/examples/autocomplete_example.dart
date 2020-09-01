@@ -3,46 +3,46 @@ import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 
 class AutoCompleteExample extends StatefulWidget {
   @override
-  _AutoCompleteExampleState createState() => new _AutoCompleteExampleState();
+  _AutoCompleteExampleState createState() => _AutoCompleteExampleState();
 }
 
 class _AutoCompleteExampleState extends State<AutoCompleteExample> {
   List<String> suggestions = [
-    "Apple",
-    "Armidillo",
-    "Actual",
-    "Actuary",
-    "America",
-    "Argentina",
-    "Australia",
-    "Antarctica",
-    "Blueberry",
-    "Cheese",
-    "Danish",
-    "Eclair",
-    "Fudge",
-    "Granola",
-    "Hazelnut",
-    "Ice Cream",
-    "Jely",
-    "Kiwi Fruit",
-    "Lamb",
-    "Macadamia",
-    "Nachos",
-    "Oatmeal",
-    "Palm Oil",
-    "Quail",
-    "Rabbit",
-    "Salad",
-    "T-Bone Steak",
-    "Urid Dal",
-    "Vanilla",
-    "Waffles",
-    "Yam",
-    "Zest"
+    'Apple',
+    'Armidillo',
+    'Actual',
+    'Actuary',
+    'America',
+    'Argentina',
+    'Australia',
+    'Antarctica',
+    'Blueberry',
+    'Cheese',
+    'Danish',
+    'Eclair',
+    'Fudge',
+    'Granola',
+    'Hazelnut',
+    'Ice Cream',
+    'Jely',
+    'Kiwi Fruit',
+    'Lamb',
+    'Macadamia',
+    'Nachos',
+    'Oatmeal',
+    'Palm Oil',
+    'Quail',
+    'Rabbit',
+    'Salad',
+    'T-Bone Steak',
+    'Urid Dal',
+    'Vanilla',
+    'Waffles',
+    'Yam',
+    'Zest'
   ];
-  String currentText = "";
-  GlobalKey<AutoCompleteTextFieldState<String>> key = new GlobalKey();
+  String currentText = '';
+  GlobalKey<AutoCompleteTextFieldState<String>> key = GlobalKey();
 
   _AutoCompleteExampleState() {
     textField = AutoCompleteTextField(
@@ -53,13 +53,13 @@ class _AutoCompleteExampleState extends State<AutoCompleteExample> {
         return x.toLowerCase().contains(query.toLowerCase());
       },
       textChanged: (data) {
-        print("JAPM $data");
+        print('JAPM $data');
       },
       textSubmitted: (data) {
-        print("Entre aqui $data");
+        print('Entre aqui $data');
       },
-      decoration: new InputDecoration(
-        prefixIcon: new Icon(Icons.search),
+      decoration: InputDecoration(
+        prefixIcon: Icon(Icons.search),
       ),
       itemSubmitted: (data) {
         print(data);

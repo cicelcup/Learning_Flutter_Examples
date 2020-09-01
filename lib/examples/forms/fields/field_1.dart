@@ -7,7 +7,7 @@ class Field1 extends StatelessWidget {
     return FormBuilderCheckbox(
       attribute: 'accept_terms',
       label: Text(
-        "I have read and agree to the terms and conditions",
+        'I have read and agree to the terms and conditions',
         style: Theme.of(context).textTheme.subtitle1,
       ),
       initialValue: false,
@@ -15,7 +15,7 @@ class Field1 extends StatelessWidget {
       activeColor: Colors.pink,
       validators: [
         FormBuilderValidators.requiredTrue(
-          errorText: "You must accept terms and conditions to continue",
+          errorText: 'You must accept terms and conditions to continue',
         ),
       ],
     );

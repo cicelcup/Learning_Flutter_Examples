@@ -40,18 +40,16 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
     //creating the query
     var query = store.query(finder: finder);
 
-    if (subscription == null) {
-      subscription = query.onSnapshots(database).listen((snapshots) {
-        List _provisionalList =
-            snapshots.map((e) => e.value["name"] ?? "Que ladilla").toList();
-        setState(() {
-          otherList = _provisionalList;
-        });
+    subscription ??= query.onSnapshots(database).listen((snapshots) {
+      var _provisionalList =
+          snapshots.map((e) => e.value['name'] ?? 'by default').toList();
+      setState(() {
+        otherList = _provisionalList;
       });
-    }
+    });
   }
 
-  setStream(Database database) {
+  Stream<List<RecordSnapshot>> setStream(Database database) {
     //finder ordering by the key
     var finder = Finder(sortOrders: [SortOrder('key', true)]);
     //creating the query
@@ -72,10 +70,10 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
     });
 
     //add data using map def
-    var myMap = Map<String, dynamic>();
-    myMap["name"] = "JAPM";
-    myMap["edad"] = "39";
-    myMap["country"] = "Venezuela";
+    var myMap = <String, dynamic>{};
+    myMap['name'] = 'JAPM';
+    myMap['edad'] = '39';
+    myMap['country'] = 'Venezuela';
     await store.add(_db, myMap);
 
     //getting a example record by the key
@@ -99,7 +97,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
 
   //delete specific data
   Future<void> deleteData() async {
-    var filter = Filter.matches("id", "3");
+    var filter = Filter.matches('id', '3');
     var finder = Finder(filter: filter);
     await store.delete(_db, finder: finder);
   }
@@ -124,10 +122,11 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
     List<Widget> temporal = recordSnapshot.map((e) {
       var value;
 
-      if (e.value["name"] != null) {
-        value = e.value["name"];
-      } else
-        value = "not value";
+      if (e.value['name'] != null) {
+        value = e.value['name'];
+      } else {
+        value = 'not value';
+      }
 
       return Padding(
         padding: const EdgeInsets.all(16.0),
@@ -159,7 +158,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sembast 2 Example"),
+        title: Text('Sembast 2 Example'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -182,25 +181,25 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
                 Container(
                     width: double.infinity,
                     child: Center(
-                        child: Text("Different options in the database"))),
+                        child: Text('Different options in the database'))),
                 RaisedButton(
-                    child: Text("Write Data"), onPressed: () => addData()),
+                    child: Text('Write Data'), onPressed: () => addData()),
                 RaisedButton(
-                    child: Text("Read all Data"), onPressed: () => readData()),
+                    child: Text('Read all Data'), onPressed: () => readData()),
                 RaisedButton(
-                    child: Text("Update Data"), onPressed: () => updateData()),
+                    child: Text('Update Data'), onPressed: () => updateData()),
                 RaisedButton(
-                    child: Text("Delete Data"), onPressed: () => deleteData()),
+                    child: Text('Delete Data'), onPressed: () => deleteData()),
                 RaisedButton(
-                    child: Text("Delete all"), onPressed: () => deleteAll()),
+                    child: Text('Delete all'), onPressed: () => deleteAll()),
                 RaisedButton(
-                  child: Text("Sort and read"),
+                  child: Text('Sort and read'),
                   onPressed: () {
                     readAndSort();
                   },
                 ),
                 RaisedButton(
-                    child: Text("Read one field"),
+                    child: Text('Read one field'),
                     onPressed: () => readOneField()),
                 Expanded(
                   child: Container(
@@ -226,7 +225,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
                     color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      children: listOfNames.length != 0
+                      children: listOfNames.isNotEmpty
                           ? listOfNames
                           : List.generate(
                               5,
@@ -234,7 +233,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 16.0),
                                 child: Center(
-                                  child: Text("JAPM"),
+                                  child: Text('JAPM'),
                                 ),
                               ),
                             ),
@@ -257,7 +256,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
                               itemBuilder: (_, item) {
                                 return Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Center(child: Text(l[item]["name"])),
+                                  child: Center(child: Text(l[item]['name'])),
                                 );
                               }),
                         ),
@@ -273,7 +272,7 @@ class _Sembast2ExampleState extends State<Sembast2Example> {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
-                  child: Text("Boundary"),
+                  child: Text('Boundary'),
                 )
               ],
             ),

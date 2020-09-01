@@ -43,7 +43,7 @@ class _ActionIconState extends State<ActionIconExample>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Action Icon"),
+        title: Text('Action Icon'),
       ),
       body: Center(
         child: IconButton(

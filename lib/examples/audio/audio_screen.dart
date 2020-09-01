@@ -8,7 +8,7 @@ class AudioScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Audio Service Example"),
+        title: Text('Audio Service Example'),
       ),
       body: Center(
         //Stream builder according different states of the playback
@@ -30,21 +30,21 @@ class AudioScreen extends StatelessWidget {
                 //it was stopped
                 if (processingState == AudioProcessingState.none ||
                     processingState == AudioProcessingState.stopped)
-                  RaisedButton(child: Text("Start"), onPressed: start),
+                  RaisedButton(child: Text('Start'), onPressed: start),
 
                 //Show the stop button if the process is already started
                 if (processingState != AudioProcessingState.none &&
                     processingState != AudioProcessingState.stopped)
-                  RaisedButton(child: Text("Stop"), onPressed: stop),
+                  RaisedButton(child: Text('Stop'), onPressed: stop),
 
                 //Show the pause button is the audio process is ready and it is
                 // currently playing
                 if (processingState == AudioProcessingState.ready && playing)
-                  RaisedButton(child: Text("Pause"), onPressed: pause),
+                  RaisedButton(child: Text('Pause'), onPressed: pause),
                 //Show the play button is the audio process is ready and it is
                 //currently on pause
                 if (processingState == AudioProcessingState.ready && !playing)
-                  RaisedButton(child: Text("Play"), onPressed: play),
+                  RaisedButton(child: Text('Play'), onPressed: play),
               ],
             );
           },
@@ -54,18 +54,18 @@ class AudioScreen extends StatelessWidget {
   }
 
   //Starting audio service with custom info
-  start() => AudioService.start(
+  void start() => AudioService.start(
         backgroundTaskEntrypoint: backgroundTaskEntryPoint,
-        androidNotificationChannelName: "Audio Service",
+        androidNotificationChannelName: 'Audio Service',
         androidNotificationColor: Colors.red.value,
       );
 
   //Stop the audio service
-  stop() => AudioService.stop();
+  void stop() => AudioService.stop();
 
   //pause the audio service
-  pause() => AudioService.pause();
+  void pause() => AudioService.pause();
 
   //play the audio service
-  play() => AudioService.play();
+  void play() => AudioService.play();
 }

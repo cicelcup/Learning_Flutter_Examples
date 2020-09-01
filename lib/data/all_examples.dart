@@ -19,7 +19,7 @@ import 'package:learningflutterexamples/general/app_strings.dart';
 //class to create the example list
 class AllExamples {
   //List of examples
-  static List<Example> _list = [];
+  static final List<Example> _list = [];
 
   static List<Example> getAllExamples() {
     //Clear the list to avoid generate again when reStart the app

@@ -19,7 +19,7 @@ class _BackDropExampleState extends State<BackDropExample> {
     for (var i = 1; i < lengthOfLayers; i++)
       Center(
         child: Text(
-          "${AppStrings.frontLayerLabel} $i",
+          '${AppStrings.frontLayerLabel} $i',
           style: TextStyle(
             color: Colors.orange,
             fontSize: 24.0,
@@ -37,7 +37,7 @@ class _BackDropExampleState extends State<BackDropExample> {
           color: Colors.white,
         ),
         title: Text(
-          "${AppStrings.frontLayerLabel} $i",
+          '${AppStrings.frontLayerLabel} $i',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,

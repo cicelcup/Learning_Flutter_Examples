@@ -8,7 +8,7 @@ class ShareExample extends StatelessWidget {
     @required String message,
   }) async {
     String url() {
-      return "whatsapp://send?phone=$phone&text=${Uri.parse(message)}";
+      return 'whatsapp://send?phone=$phone&text=${Uri.parse(message)}';
     }
 
     if (await canLaunch(url())) {
@@ -22,7 +22,7 @@ class ShareExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Share app"),
+        title: Text('Share app'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -33,7 +33,7 @@ class ShareExample extends StatelessWidget {
             onPressed: () {
               Share.share('Prueba');
             },
-            child: Text("Send using share platform"),
+            child: Text('Send using share platform'),
           ),
           SizedBox(
             height: 16.0,
@@ -41,9 +41,9 @@ class ShareExample extends StatelessWidget {
           RaisedButton(
             onPressed: () {
               launchWhatsApp(
-                  phone: "+50683454273", message: "Extremadamente demasiado");
+                  phone: '+50683454273', message: 'Mensaje de prueba');
             },
-            child: Text("Send direct to whatsapp"),
+            child: Text('Send direct to whatsapp'),
           ),
         ],
       ),

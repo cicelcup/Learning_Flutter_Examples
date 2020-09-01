@@ -6,7 +6,7 @@ class Field19 extends StatelessWidget {
   Widget build(BuildContext context) {
     return FormBuilderSwitch(
       label: Text('I Accept the tems and conditions'),
-      attribute: "accept_terms_switch",
+      attribute: 'accept_terms_switch',
       initialValue: true,
     );
   }

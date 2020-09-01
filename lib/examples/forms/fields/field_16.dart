@@ -9,8 +9,8 @@ class Field16 extends StatelessWidget {
       selectedColor: Colors.yellowAccent.shade200,
       pressedColor: Colors.blueGrey,
       validators: [FormBuilderValidators.required()],
-      decoration: InputDecoration(labelText: "Movie Rating"),
-      attribute: "movie_rating",
+      decoration: InputDecoration(labelText: 'Movie Rating'),
+      attribute: 'movie_rating',
       options: List.generate(5, (i) => i + 1)
           .map((number) => FormBuilderFieldOption(value: number))
           .toList(),

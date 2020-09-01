@@ -37,7 +37,7 @@ class ExampleItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: CircleAvatar(child: Text("${index + 1}")),
+        leading: CircleAvatar(child: Text('${index + 1}')),
         title: Text(
           example.title,
           style: TextStyle(color: AppColors.accentColor),

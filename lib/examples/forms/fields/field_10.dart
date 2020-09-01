@@ -10,12 +10,12 @@ class Field10 extends StatelessWidget {
       selectedColor: Colors.teal,
       checkmarkColor: Colors.pink,
       elevation: 8.0,
-      attribute: "pets",
+      attribute: 'pets',
       options: [
-        FormBuilderFieldOption(child: Text("Cats"), value: "cats"),
-        FormBuilderFieldOption(child: Text("Dogs"), value: "dogs"),
-        FormBuilderFieldOption(child: Text("Rodents"), value: "rodents"),
-        FormBuilderFieldOption(child: Text("Birds"), value: "birds"),
+        FormBuilderFieldOption(child: Text('Cats'), value: 'cats'),
+        FormBuilderFieldOption(child: Text('Dogs'), value: 'dogs'),
+        FormBuilderFieldOption(child: Text('Rodents'), value: 'rodents'),
+        FormBuilderFieldOption(child: Text('Birds'), value: 'birds'),
       ],
     );
   }

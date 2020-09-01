@@ -11,7 +11,7 @@ class _FutureStreamExampleState extends State<FutureStreamExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Future and Stream Example")),
+      appBar: AppBar(title: Text('Future and Stream Example')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -29,8 +29,9 @@ class _FutureStreamExampleState extends State<FutureStreamExample> {
       child: FutureBuilder<int>(
         future: _calculateSquare(10),
         builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done)
-            return Text("Square = ${snapshot.data}");
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Text('Square = ${snapshot.data}');
+          }
 
           return CircularProgressIndicator();
         },
@@ -50,8 +51,9 @@ class _FutureStreamExampleState extends State<FutureStreamExample> {
       child: StreamBuilder<int>(
         stream: _stopwatch(),
         builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.active)
-            return Text("Stopwatch = ${snapshot.data}");
+          if (snapshot.connectionState == ConnectionState.active) {
+            return Text('Stopwatch = ${snapshot.data}');
+          }
 
           return CircularProgressIndicator();
         },

@@ -16,7 +16,7 @@ class FormScreenExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Form Example")),
+      appBar: AppBar(title: Text('Form Example')),
       body: Theme(
         data: getFormTheme(),
         child: Padding(

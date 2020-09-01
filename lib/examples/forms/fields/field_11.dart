@@ -16,11 +16,11 @@ class Field11 extends StatelessWidget {
       imageWidth: 100.0,
 
       imageMargin: EdgeInsets.all(8.0),
-      cameraLabel: Text("Open Camera"),
+      cameraLabel: Text('Open Camera'),
       // readOnly: true,
       validators: [
         FormBuilderValidators.required(
-            errorText: "You should choose one image"),
+            errorText: 'You should choose one image'),
         (images) {
           if (images.length < 2) {
             return 'Two images required.';

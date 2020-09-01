@@ -7,8 +7,8 @@ class Field21 extends StatelessWidget {
     return FormBuilderTouchSpin(
       iconActiveColor: Colors.deepOrange,
       textStyle: Theme.of(context).textTheme.headline5,
-      decoration: InputDecoration(labelText: "Stepper"),
-      attribute: "stepper",
+      decoration: InputDecoration(labelText: 'Stepper'),
+      attribute: 'stepper',
       initialValue: 10,
       max: 15,
       step: 1,

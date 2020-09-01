@@ -5,9 +5,9 @@ class SplashHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Splash Home Page"),
+        title: Text('Splash Home Page'),
       ),
-      body: Center(child: Text("This is a example")),
+      body: Center(child: Text('This is a example')),
     );
   }
 }

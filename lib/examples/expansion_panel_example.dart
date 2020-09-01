@@ -11,7 +11,7 @@ class _ExpansionPanelExampleState extends State<ExpansionPanelExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Expansion Panel Example"),
+        title: Text('Expansion Panel Example'),
       ),
       body: Center(
         child: Column(
@@ -56,7 +56,7 @@ class _ExpansionPanelExampleState extends State<ExpansionPanelExample> {
                 setState(() {});
               },
               child: Text(
-                "Collapse all",
+                'Collapse all',
                 style: TextStyle(color: Colors.white),
               ),
             )

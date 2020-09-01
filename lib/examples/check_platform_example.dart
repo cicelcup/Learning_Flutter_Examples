@@ -6,7 +6,7 @@ class CheckPlatformExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Test Material"),
+        title: Text('Test Material'),
       ),
       body: Center(
         child: Container(

@@ -8,10 +8,10 @@ class Field8 extends StatelessWidget {
     return FormBuilderDateTimePicker(
       resetIcon: null,
       autovalidate: false,
-      attribute: "date",
+      attribute: 'date',
       inputType: InputType.date,
-      format: DateFormat("yyyy-MM-dd"),
-      decoration: InputDecoration(labelText: "Appointment Day"),
+      format: DateFormat('yyyy-MM-dd'),
+      decoration: InputDecoration(labelText: 'Appointment Day'),
     );
   }
 }
