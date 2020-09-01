@@ -1,6 +1,7 @@
 import 'package:learningflutterexamples/data/Example.dart';
 import 'package:learningflutterexamples/examples/action_icon_example.dart';
 import 'package:learningflutterexamples/examples/animated_container_example.dart';
+import 'package:learningflutterexamples/examples/animated_opacity_example.dart';
 import 'package:learningflutterexamples/examples/audio/audio_service_example.dart';
 import 'package:learningflutterexamples/examples/autocomplete_example.dart';
 import 'package:learningflutterexamples/examples/check_platform_example.dart';
@@ -87,6 +88,10 @@ class AllExamples {
     _list.add(Example(
         title: AppStrings.exampleTitle18,
         widgetExample: AnimatedContainerExample()));
+
+    _list.add(Example(
+        title: AppStrings.exampleTitle19,
+        widgetExample: AnimatedOpacityExample()));
 
     return _list;
   }

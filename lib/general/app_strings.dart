@@ -20,6 +20,7 @@ class AppStrings {
   static const String exampleTitle16 = 'Page Route Transition';
   static const String exampleTitle17 = 'Physics Simulation';
   static const String exampleTitle18 = 'Animated Container';
+  static const String exampleTitle19 = 'Animated Opacity';
 
   /*Backdrop Example*/
   static const String frontLayerLabel = 'Front Layer';

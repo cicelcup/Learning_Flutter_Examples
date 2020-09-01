@@ -40,8 +40,8 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
             onPressed: () {
               setState(() {
                 _radius = Random().nextInt(50).toDouble();
-                _height = 50.0 + Random().nextInt(200).toDouble();
-                _width = 50.0 + Random().nextInt(200).toDouble();
+                _height = 50.0 + Random().nextInt(150).toDouble();
+                _width = 50.0 + Random().nextInt(150).toDouble();
                 _borderWidth = Random().nextInt(10).toDouble();
                 _color = Color.fromRGBO(156, 39, 176, Random().nextDouble());
                 _borderColor = Color.fromRGBO(
