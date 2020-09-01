@@ -34,7 +34,7 @@ dependencies:
   #play audio
   just_audio: ^0.2.2
   #form with different components and validators
-  flutter_form_builder: ^3.13.1
+  flutter_form_builder: ^3.14.0-alpha.2
   #choose files from the phone
   form_builder_file_picker: ^0.3.0
   #Fonts
