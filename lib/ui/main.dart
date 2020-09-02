@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:i18n_extension/i18n_widget.dart';
 import 'package:learningflutterexamples/general/app_strings.dart';
 import 'package:learningflutterexamples/general/app_theme.dart';
 import 'example_list_screen.dart';
@@ -14,7 +16,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: AppStrings.appTitle,
       theme: appTheme,
-      home: ExamplesListScreen(),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en'),
+        const Locale('es'),
+      ],
+      home: I18n(
+        child: ExamplesListScreen(),
+      ),
     );
   }
 }

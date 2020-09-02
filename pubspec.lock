@@ -298,6 +298,11 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.2.2"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -383,6 +388,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.4"
+  i18n_extension:
+    dependency: "direct main"
+    description:
+      name: i18n_extension
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.4.2"
   image:
     dependency: transitive
     description:
@@ -738,6 +750,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0-nullsafety"
+  sprintf:
+    dependency: transitive
+    description:
+      name: sprintf
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.1.0"
   sqflite:
     dependency: transitive
     description:
